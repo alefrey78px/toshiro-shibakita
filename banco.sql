@@ -1,8 +1,10 @@
 CREATE TABLE dados (
-    AlunoID int,
-    Nome varchar(50),
-    Sobrenome varchar(50),
-    Endereco varchar(150),
-    Cidade varchar(50),
-    Host varchar(50)
-);
+    AlunoID INT AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(50) NOT NULL,
+    Sobrenome VARCHAR(50) NOT NULL,
+    Endereco VARCHAR(100),
+    Cidade VARCHAR(50),
+    Host VARCHAR(255),
+    DataCriacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
